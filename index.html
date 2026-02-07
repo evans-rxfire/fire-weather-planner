@@ -41,7 +41,7 @@
                 <fieldset class="border-2 border-gray-300 dark:border-gray-600 p-4 rounded-md mb-6">
                     <legend class="font-semibold text-lg text-gray-700 dark:text-gray-300 mb-4 px-2">Burn Information</legend>
 
-                    <div class="flex items-center gap-4 mb-4">
+                    <div class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 mb-4">
                         <label for="property-name" class="block font-semibold text-sm mb-1 text-gray-700 dark:text-gray-200">Property Name</label>
                         <input 
                             type="text" 
@@ -51,7 +51,7 @@
                         >
                     </div>
                     
-                    <div class="flex items-center gap-4 mb-4">
+                    <div class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 mb-4">
                         <label for="latitude-input" class="block font-semibold text-sm mb-1 text-gray-700 dark:text-gray-200">Latitude</label>
                         <input 
                             type="number" 
@@ -65,7 +65,7 @@
                             required
                         >
 
-                        <label for="longitude-input" class="block font-semibold text-sm mb-1 ml-auto text-gray-700 dark:text-gray-200">Longitude</label>
+                        <label for="longitude-input" class="block font-semibold text-sm mb-1 ml-0 sm:ml-auto text-gray-700 dark:text-gray-200">Longitude</label>
                         <input 
                             type="number" 
                             id="longitude-input" 
@@ -88,10 +88,10 @@
                 <fieldset class="border-2 border-gray-300 dark:border-gray-600 p-4 rounded-md mb-6">
                     <legend class="font-semibold text-lg text-gray-700 dark:text-gray-300 mb-4 px-2">Acceptable Weather Parameters</legend>
 
-                    <div class="flex items-center gap-4 mb-4">
+                    <div class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 mb-4">
                         <span class="font-semibold">Temperature</span>
 
-                        <label for="acceptable-min-temp" class="block font-semibold text-sm mb-1 ml-auto text-gray-700 dark:text-gray-200">Min</label>
+                        <label for="acceptable-min-temp" class="block font-semibold text-sm mb-1 ml-0 sm:ml-auto text-gray-700 dark:text-gray-200">Min</label>
                         <input 
                             type="number" 
                             id="acceptable-min-temp" 
@@ -111,10 +111,10 @@
                         >
                     </div>
 
-                    <div class="flex items-center gap-4 mb-4">
+                    <div class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 mb-4">
                         <span class="font-semibold">Relative Humidity</span>
 
-                        <label for="acceptable-min-rh" class="block font-semibold text-sm mb-1 ml-auto text-gray-700 dark:text-gray-200">Min</label>
+                        <label for="acceptable-min-rh" class="block font-semibold text-sm mb-1 ml-0 sm:ml-auto text-gray-700 dark:text-gray-200">Min</label>
                         <input 
                             type="number" 
                             id="acceptable-min-rh" 
@@ -134,10 +134,10 @@
                         >                        
                     </div>
 
-                    <div class="flex items-center gap-4 mb-4">
+                    <div class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 mb-4">
                         <span class="font-semibold">20ft Wind Speed</span>
 
-                        <label for="acceptable-min-wind-speed" class="block font-semibold text-sm mb-1 ml-auto text-gray-700 dark:text-gray-200">Min</label>
+                        <label for="acceptable-min-wind-speed" class="block font-semibold text-sm mb-1 ml-0 sm:ml-auto text-gray-700 dark:text-gray-200">Min</label>
                         <input 
                             type="number" 
                             id="acceptable-min-wind-speed" 
@@ -155,10 +155,10 @@
                         >
                     </div>
 
-                    <div class="flex flex-wrap items-center gap-2 mb-4">
+                    <div class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 mb-4">
                         <span class="font-semibold">20ft Wind Direction(s)</span>
 
-                        <label class="inline-flex items-center font-semibold text-sm mb-1 ml-auto text-gray-700 dark:text-gray-200 border border-gray-300 dark:border-gray-600 hover:ring hover:ring-blue-500 rounded-sm p-2 gap-2">
+                        <label class="inline-flex items-center font-semibold text-sm mb-1 ml-0 sm:ml-auto text-gray-700 dark:text-gray-200 border border-gray-300 dark:border-gray-600 hover:ring hover:ring-blue-500 rounded-sm p-2 gap-2">
                             <input type="checkbox" name="acceptableWindDir" value="N" class="text-sm text-gray-700 dark:text-gray-200 font-semibold">
                             N
                         </label>
@@ -196,10 +196,10 @@
                 <fieldset class="border-2 border-gray-300 dark:border-gray-600 p-4 rounded-md mb-6">
                     <legend class="font-semibold text-lg text-gray-700 dark:text-gray-300 mb-4 px-2">Preferred Weather Parameters</legend>
 
-                    <div class="flex items-center gap-4 mb-4">
+                    <div class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 mb-4">
                         <span class="font-semibold">Temperature</span>
 
-                        <label for="preferred-min-temp" class="block font-semibold text-sm mb-1 ml-auto text-gray-700 dark:text-gray-200">Min</label>
+                        <label for="preferred-min-temp" class="block font-semibold text-sm mb-1 ml-0 sm:ml-auto text-gray-700 dark:text-gray-200">Min</label>
                         <input 
                             type="number" 
                             id="preferred-min-temp" 
@@ -219,10 +219,10 @@
                         >
                     </div>
                     
-                    <div class="flex items-center gap-4 mb-4">
+                    <div class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 mb-4">
                         <span class="font-semibold">Relative Humidity</span>
 
-                        <label for="preferred-min-rh" class="block font-semibold text-sm mb-1 ml-auto text-gray-700 dark:text-gray-200">Min</label>
+                        <label for="preferred-min-rh" class="block font-semibold text-sm mb-1 ml-0 sm:ml-auto text-gray-700 dark:text-gray-200">Min</label>
                         <input 
                             type="number" 
                             id="preferred-min-rh" 
@@ -242,10 +242,10 @@
                         >
                     </div>
 
-                    <div class="flex items-center gap-4 mb-4">
+                    <div class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 mb-4">
                         <span class="font-semibold">20ft Wind Speed</span>
 
-                        <label for="preferred-min-wind-speed" class="block font-semibold text-sm mb-1 ml-auto text-gray-700 dark:text-gray-200">Min</label>
+                        <label for="preferred-min-wind-speed" class="block font-semibold text-sm mb-1 ml-0 sm:ml-auto text-gray-700 dark:text-gray-200">Min</label>
                         <input 
                             type="number" 
                             id="preferred-min-wind-speed" 
@@ -263,10 +263,10 @@
                         >
                     </div>
 
-                    <div class="flex flex-wrap items-center gap-2 mb-4">
+                    <div class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 mb-4">
                         <span class="font-semibold">20ft Wind Direction(s)</span>
 
-                        <label class="inline-flex items-center font-semibold text-sm mb-1 ml-auto text-gray-700 dark:text-gray-200 border border-gray-300 dark:border-gray-600 hover:ring hover:ring-blue-500 rounded-sm p-2 gap-2">
+                        <label class="inline-flex items-center font-semibold text-sm mb-1 ml-0 sm:ml-auto text-gray-700 dark:text-gray-200 border border-gray-300 dark:border-gray-600 hover:ring hover:ring-blue-500 rounded-sm p-2 gap-2">
                             <input type="checkbox" name="preferredWindDir" value="N" class="text-sm text-gray-700 dark:text-gray-200 font-semibold">
                             N
                         </label>

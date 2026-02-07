@@ -519,10 +519,10 @@ function buildForecastTable(evaluatedData, location, forecastTimezone) {
 
     // create table element
     const tableWrapper = document.createElement("div");
-    tableWrapper.className = "overflow-auto";
+    tableWrapper.className = "overflow-x-auto";
 
     const table = document.createElement("table");
-    table.className = "min-w-full table-auto border-collapse";
+    table.className = "min-w-[640px] w-full table-auto border-collapse";
 
     // header row: first empty cell + one cell per date
     const thead = document.createElement("thead");
